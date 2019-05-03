@@ -1,5 +1,31 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+  <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Ember Basic Workshop</a>
+</nav>
 
-{{outlet}}
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+      <div class="sidebar-sticky text-center">
+        <br><img src="https://emberjs.com/images/tomster-sm-45d6007ea34621fb603f29bd6a77798a.png" width="50%"/>
+        <h3> App Menu </h3>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            {{#link-to 'application'}} Home {{/link-to}}
+            <span class="badge badge-secondary">index</span>
+          </li>
+          <li class="nav-item">
+            {{#link-to 'invite-module'}} Invite Module {{/link-to}}
+            <span class="badge badge-secondary">invite-module</span>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+
+        {{outlet}}
+
+    </main>
+
+  </div>
+</div>
