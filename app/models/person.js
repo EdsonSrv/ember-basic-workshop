@@ -12,3 +12,12 @@ export default DS.Model.extend({
 
 //let people = this.get('store').findAll('person'); // => GET /persons
 
+/*
+let newPerson = this.get('store').createRecord('person', {
+  name: 'Gamaliel',
+  age: 26,
+  admin: false
+});
+
+newPerson.save();  //=> POST to '/persons'
+*/
