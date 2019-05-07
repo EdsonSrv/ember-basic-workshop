@@ -1,4 +1,6 @@
-export default function(/* server */) {
+export default function( server ) {
+  server.loadFixtures('invites');
+  server.loadFixtures('users');
 
   /*
     Seed your development database using your factories.
@@ -6,5 +8,4 @@ export default function(/* server */) {
   */
 
   // server.createList('post', 10);
-  server.loadFixtures('persons'); // Fixture names
 }
