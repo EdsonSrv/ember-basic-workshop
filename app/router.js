@@ -11,6 +11,7 @@ Router.map(function() {
     this.route('find-users');
     this.route('show-invites');
   });
+  this.route('tests');
 });
 
 export default Router;
